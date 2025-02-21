@@ -9,8 +9,6 @@ It allows users to **view transactions, search, filter by month, and visualize d
 ✅ **Statistics Overview** – View total sales, sold & unsold items  
 ✅ **Bar & Pie Charts** – Visualize transaction data  
 ✅ **Fully Responsive** – Built with Bootstrap for mobile-friendly UI  
-✅ **Deployed on Vercel** – Uses serverless PostgreSQL  
-
 ---
 
 ## 🏗️ Tech Stack
