@@ -81,11 +81,24 @@ PORT=5000
 ```sh
 npm start
 ```
-Now, your backend will be running on **`http://localhost:5000`**.  
+Now, your backend will be running on **`(https://transaction-dashboard-pi.vercel.app)`**.  
 
 ---
 
+🚀 Deployment Guide
+🌍 Deploy Backend to Vercel
+1️⃣ Push backend to GitHub
+2️⃣ Go to Vercel → New Project → Select repo
+3️⃣ Set Root Directory to /backend
+4️⃣ Add environment variables (DATABASE_URL, PORT=5000)
+5️⃣ Deploy backend → Get Backend URL
 
+🌍 Deploy Frontend to Vercel
+1️⃣ Push frontend to GitHub
+2️⃣ Go to Vercel → New Project → Select repo
+3️⃣ Set Root Directory to /frontend
+4️⃣ Add VITE_BACKEND_URL = https://your-backend.vercel.app
+5️⃣ Deploy frontend → [Live Link🔗](https://transactiondashboard.vercel.app/)
 
 ## 📸 Screenshots
 
