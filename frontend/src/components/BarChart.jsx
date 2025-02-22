@@ -9,7 +9,7 @@ const BarChart = ({ month }) => {
 
   useEffect(() => {
     fetchBarChartData();
-  }, [month]); // ✅ Ensure the chart updates when the month changes
+  }, [month]); 
 
   const fetchBarChartData = async () => {
     try {
@@ -18,11 +18,11 @@ const BarChart = ({ month }) => {
         setBarChartData(data);
       } else {
         console.warn("No data available for the selected month.");
-        setBarChartData([]); // ✅ Set an empty array to prevent map errors
+        setBarChartData([]); 
       }
     } catch (error) {
       console.error("Error fetching bar chart data:", error);
-      setBarChartData([]); // ✅ Prevents crashing if API fails
+      setBarChartData([]); 
     }
   };
 
@@ -35,11 +35,11 @@ const BarChart = ({ month }) => {
       <h2 className="text-center">Price Range Distribution</h2>
       <Bar
         data={{
-          labels: barChartData.map((d) => d.pricerange), // ✅ Ensure correct property name
+          labels: barChartData.map((d) => d.pricerange), 
           datasets: [
             {
               label: "Number of Items",
-              data: barChartData.map((d) => Number(d.count)), // ✅ Convert count to Number
+              data: barChartData.map((d) => Number(d.count)), 
               backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56", "#4CAF50"],
             },
           ],
@@ -50,7 +50,7 @@ const BarChart = ({ month }) => {
             y: {
               beginAtZero: true,
               ticks: {
-                stepSize: 1, // ✅ Ensure it increments by 1
+                stepSize: 1,
               },
             },
           },

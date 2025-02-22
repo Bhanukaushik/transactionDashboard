@@ -50,7 +50,7 @@ const TransactionsTable = ({ month }) => {
         <table className="table table-striped table-hover">
           <thead className="table-dark">
             <tr>
-              <th>Image</th> {/* ✅ New Column for Product Image */}
+              <th>Image</th> 
               <th>Title</th>
               <th>Price</th>
               <th>Category</th>
@@ -65,7 +65,7 @@ const TransactionsTable = ({ month }) => {
                     src={t.image}
                     alt={t.title}
                     className="img-thumbnail"
-                    style={{ width: "50px", height: "50px", objectFit: "cover" }} // ✅ Small image with uniform size
+                    style={{ width: "50px", height: "50px", objectFit: "cover" }} 
                   />
                 </td>
                 <td>{t.title}</td>
